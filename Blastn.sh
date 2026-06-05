@@ -14,6 +14,7 @@ WORKDIR=path_to_your_workdir
 GENOME=path_to_your_genome
 
 #Make your DB (In the genome is better for blast tiny sequences)
+#executed this command one time after add a # to the makeblastdb
 makeblastdb -in $GENOME -dbtype nucl
 
 mkdir -p $WORKDIR/BLAST
